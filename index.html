@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>TaiNguyen - Portfolio</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <ul>
+                <li><a href="https://github.com/Paradox511" target="_blank"><i class="fa-brands fa-github"></i>Github</a></li>
+            </ul>
+            <h1>Huỳnh Lâm Đức </h1>
+            <img src="img/picture.jpg" alt="" class="profile-image">
+            
+        </header>
+
+        <div class="main-content">
+            <div class="left-column">
+                <section id="about">
+                    <h2>About Me</h2>
+                    <p>   Willing to learn and always curious about programming knowledge </p>
+                    <p>   Want to become a professional programmer</p>
+                    <p>   Trying to improve presentation skills, group work, and individual project work</p>
+                </section>
+
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <h3>Programing Languages and Tools:</h3>
+                    <ul>
+                        <li>Java</li>
+                        <li>C/C++</li>
+                        <li>C#</li>
+                        <li>MySQL</li>
+                    </ul>
+                </section>
+
+                <section id="language">
+                    <h2>Languages</h2>
+                    <p>English</p>
+                    <p>Vietnamese</p>
+                    <p>Japanese (beginner)</p>
+                </section>
+                
+                <section id="education">
+                    <h2>Education</h2>
+                    <p>SaiGon University (2021 - now)</p>
+                    <p>IELTS 7.5 Certification (Expired 04/2023)</p>
+                </section>
+                
+            </div>
+
+            <div class="right-column">
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="project-card">
+                        <h3>Pharmacy Management App</h3>
+                        <p>Programing languages: C#,MySQL</p>
+                        <a href="https://github.com/vihao1802/pharmacy-management" target="_blank">View Project</a>
+                    </div>        
+
+                    <div class="project-card">
+                        <h3>Bookstore Management App</h3>
+                        <p>Programing languages: JavaSwing,MySQL</p>
+                        
+                        <a href="https://github.com/Paradox511/ql_nhasach" target="_blank">View Project</a>
+                    </div>                     
+                </section>
+            </div>
+            
+        </div>
+        <button id="back-to-top" onclick="scrollToTop()"><i class="fa-solid fa-arrow-up"></i></button>
+        <footer>
+        <ul>
+            <li><i class="fa-regular fa-envelope"></i>huynhlamduc2003@gmail.com</li>
+            <li><i class="fa-solid fa-phone"></i>+84 909460157</li>
+        </ul>
+    </footer>
+    </div>
+
+  
+<script>
+    function scrollToTop() {
+    window.scroll({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
+
+window.onscroll = function () {
+    showBackToTopButton();
+};
+
+function showBackToTopButton() {
+    var button = document.getElementById("back-to-top");
+    if (document.body.scrollTop > 1 || document.documentElement.scrollTop > 1) {
+        button.style.display = "block";
+    } else {
+        button.style.display = "none";
+    }
+}
+
+</script>
+</body>
+</html>
